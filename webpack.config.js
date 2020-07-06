@@ -5,16 +5,20 @@ module.exports = {
         contentBase: path.resolve(__dirname, './public'),
         historyApiFallback: true
     },
-    entry: path.resolve(__dirname, './src/index.js'),
+    entry: path.resolve(__dirname, './src/index.tsx'),
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js']
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.tsx$/,
                 use: "babel-loader"
             }
         ]
     },
     output: {
+        path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
     }
 };
