@@ -1,25 +1,36 @@
 {
   "name": "react-management",
   "version": "0.0.0",
-  "private": true,
   "license": "MIT",
   "description": "A simple, intuitive, and lightweight tool for managing React projects.",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "demo": "yarn workspace @react-management/ui webpack",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js}\"",
     "clean": "yarn clean:modules",
     "clean:modules": "rimraf packages/**/node_modules && rimraf node_modules"
   },
+  "bin": {
+    "react-management": "./bin/react-management.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taylorallen0913/react-management.git"
   },
+  "dependencies": {
+    "infima": "^0.2.0-alpha.12",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
-    "lerna": "^3.22.1",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
     "prettier": "^2.0.5",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
