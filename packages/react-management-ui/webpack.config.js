@@ -5,10 +5,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, './public'),
     historyApiFallback: true,
   },
-  entry: path.resolve(__dirname, './src/index.tsx'),
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
-  },
+  entry: path.resolve(__dirname, './src/index.js'),
   module: {
     rules: [
       {

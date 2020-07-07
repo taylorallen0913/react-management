@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "demo": "yarn workspace @react-management/ui webpack",
-    "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts,tsx}\"",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js}\"",
     "clean": "yarn clean:modules",
     "clean:modules": "rimraf packages/**/node_modules && rimraf node_modules"
   },
@@ -18,12 +18,8 @@
     "url": "git+https://github.com/taylorallen0913/react-management.git"
   },
   "devDependencies": {
-    "@types/node": "^14.0.18",
-    "@types/react": "^16.9.41",
-    "@types/react-dom": "^16.9.8",
     "lerna": "^3.22.1",
     "prettier": "^2.0.5",
-    "rimraf": "^3.0.2",
-    "typescript": "^3.9.6"
+    "rimraf": "^3.0.2"
   }
 }
