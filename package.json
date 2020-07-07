@@ -8,6 +8,7 @@
     "packages/*"
   ],
   "scripts": {
+    "demo": "yarn workspace @react-management/ui webpack",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts,tsx}\"",
     "clean": "yarn clean:modules",
     "clean:modules": "rimraf packages/**/node_modules && rimraf node_modules"
