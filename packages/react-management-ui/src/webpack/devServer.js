@@ -1,12 +1,10 @@
-import path from 'path';
-import webpack from 'webpack';
-import WebpackDevServer from 'webpack-dev-server';
+const path = require('path');
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
 
 const webpackConfig = {
-  entry: path.resolve(__dirname, '../client/index.tsx'),
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
-  },
+  entry: path.resolve(__dirname, '../client/index.js'),
+  mode: 'development',
   module: {
     rules: [
       {
@@ -33,3 +31,12 @@ const devServerConfig = {
 const compiler = webpack(webpackConfig);
 
 const devServer = new WebpackDevServer(compiler, devServerConfig);
+
+const port = 3000;
+
+devServer.listen(port, 'localhost', function (err) {
+  if (err) {
+    console.log(err);
+  }
+  console.log('WebpackDevServer listening at localhost:', port);
+});
