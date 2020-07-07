@@ -17,6 +17,7 @@
     "url": "git+https://github.com/taylorallen0913/react-management.git"
   },
   "dependencies": {
+    "better-opn": "^2.0.0",
     "infima": "^0.2.0-alpha.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

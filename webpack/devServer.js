@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
+const open = require('better-opn');
 
 const webpackConfig = {
   entry: path.resolve(__dirname, '../client/index.js'),
@@ -32,11 +33,12 @@ const compiler = webpack(webpackConfig);
 
 const devServer = new WebpackDevServer(compiler, devServerConfig);
 
-const port = 3000;
+const PORT = 8000;
 
-devServer.listen(port, 'localhost', function (err) {
+devServer.listen(PORT, 'localhost', function (err) {
   if (err) {
     console.log(err);
   }
-  console.log('WebpackDevServer listening at localhost:', port);
+  open(`http://localhost:${PORT}`);
+  console.log('React Management UI started on port ', PORT);
 });
