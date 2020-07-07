@@ -38,6 +38,7 @@ const webpackConfig = {
 const devServerConfig = {
   contentBase: path.resolve(__dirname, '../client'),
   historyApiFallback: true,
+  stats: 'minimal',
 };
 
 const compiler = webpack(webpackConfig);

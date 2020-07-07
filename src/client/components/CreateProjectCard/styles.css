@@ -1,4 +1,4 @@
-.add-project-card {
+.create-project-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   color: white;
 }
 
-.add-project-card:hover {
+.create-project-card:hover {
   background-color: rgb(255, 255, 255, 0.05) !important;
   cursor: pointer !important;
 }

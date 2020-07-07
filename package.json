@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "better-opn": "^2.0.0",
+    "express": "^4.17.1",
     "infima": "^0.2.0-alpha.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
