@@ -1,0 +1,15 @@
+.project-card {
+  flex: 0 0 15%;
+  margin: 3% 2.5% 0 2.5%;
+  background-color: #444950 !important;
+  color: white;
+  text-align: center;
+}
+
+.project-card-header {
+  font-size: 1.2em;
+}
+
+.project-card-icon {
+  width: 65%;
+}

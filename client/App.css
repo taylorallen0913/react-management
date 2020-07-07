@@ -1,0 +1,7 @@
+:root {
+  --ifm-card-background-color: var(--ifm-color-gray-800);
+}
+
+body {
+  background-color: #18191a;
+}

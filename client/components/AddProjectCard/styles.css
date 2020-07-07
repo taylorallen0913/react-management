@@ -1,0 +1,19 @@
+.add-project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: dashed;
+  flex: 0 0 15%;
+  margin: 3% 2.5% 0 2.5%;
+  background-color: transparent !important;
+  color: white;
+}
+
+.add-project-card:hover {
+  background-color: rgb(255, 255, 255, 0.05) !important;
+  cursor: pointer !important;
+}
+
+.plus-sign {
+  font-size: 500%;
+}
