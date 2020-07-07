@@ -1,36 +1,26 @@
 {
   "name": "react-management",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "description": "A simple, intuitive, and lightweight tool for managing React projects.",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "watch": "webpack-dev-server --progress"
+    "clean": "yarn clean:modules",
+    "clean:modules": "rimraf packages/**/node_modules && rimraf node_modules"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taylorallen0913/react-management.git"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/taylorallen0913/react-management/issues"
-  },
-  "homepage": "https://github.com/taylorallen0913/react-management#readme",
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
     "@types/node": "^14.0.18",
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
-    "babel-loader": "^8.1.0",
-    "typescript": "^3.9.6",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.6"
   }
 }
