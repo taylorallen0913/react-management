@@ -4,7 +4,6 @@
   "license": "MIT",
   "description": "A simple, intuitive, and lightweight tool for managing React projects.",
   "scripts": {
-    "demo": "yarn workspace @react-management/ui webpack",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js}\"",
     "clean": "yarn clean:modules",
     "clean:modules": "rimraf packages/**/node_modules && rimraf node_modules"
