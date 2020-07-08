@@ -15,9 +15,12 @@ const ImportProjectIcon = () => {
   };
 
   return (
-    <div className="card import-project-icon" onClick={onToggle}>
+    <div
+      className="import-project-icon-container border-dashed border-2 border-gray-600"
+      onClick={onToggle}
+    >
       <img
-        className="import-project-icon-icon"
+        className="import-project-icon"
         src={Import}
         alt="Import Project Icon"
       />

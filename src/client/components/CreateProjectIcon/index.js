@@ -14,7 +14,10 @@ const CreateProjectIcon = () => {
   };
 
   return (
-    <div className="card create-project-icon" onClick={onToggle}>
+    <div
+      className="create-project-icon-container border-dashed border-2 border-gray-600"
+      onClick={onToggle}
+    >
       <h1 className="create-project-plus-sign">+</h1>
     </div>
   );
