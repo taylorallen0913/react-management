@@ -1,12 +1,15 @@
 import React from 'react';
 import { CreateProjectContextProvider } from './createProjectContext';
 import { ImportProjectContextProvider } from './importProjectContext';
+import { SidebarContextProvider } from './sidebarContext';
 
 const AppContext = ({ children }) => {
   return (
-    <CreateProjectContextProvider>
-      <ImportProjectContextProvider>{children}</ImportProjectContextProvider>
-    </CreateProjectContextProvider>
+    <SidebarContextProvider>
+      <CreateProjectContextProvider>
+        <ImportProjectContextProvider>{children}</ImportProjectContextProvider>
+      </CreateProjectContextProvider>
+    </SidebarContextProvider>
   );
 };
 

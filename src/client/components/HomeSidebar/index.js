@@ -1,30 +1,19 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import styled from 'styled-components';
-import { useLocation } from 'react-router-dom';
 import CreateProjectIcon from '../CreateProjectIcon';
 import ImportProjectIcon from '../ImportProjectIcon';
 
 import './styles.css';
 
 const HomeSidebar = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    // if (location.pathname === '/') setIsVisible(true);
-  }, []);
-  console.log(location.pathname);
-
   return (
     <Fragment>
-      {isVisible && (
-        <SidebarContainer>
-          <SidebarItem>
-            <CreateProjectIcon />
-            <ImportProjectIcon />
-          </SidebarItem>
-        </SidebarContainer>
-      )}
+      <SidebarContainer>
+        <SidebarItem>
+          <CreateProjectIcon />
+          <ImportProjectIcon />
+        </SidebarItem>
+      </SidebarContainer>
     </Fragment>
   );
 };

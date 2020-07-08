@@ -6,6 +6,6 @@ body {
   background-color: #18191a;
 }
 
-main {
+.sidebar-visible {
   margin-left: 200px;
 }
