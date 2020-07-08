@@ -13,7 +13,7 @@ const ProjectCard = () => {
         <img className="project-card-icon" src={Biohazard} alt="Project Icon" />
       </div>
       <div className="open-project-button">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-indigo-600 hover:bg-indigo-800 text-white py-2 px-4 rounded">
           Open Project
         </button>
       </div>
