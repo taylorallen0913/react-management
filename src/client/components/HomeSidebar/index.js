@@ -6,12 +6,12 @@ import ImportProjectIcon from '../ImportProjectIcon';
 
 import './styles.css';
 
-const Sidebar = () => {
+const HomeSidebar = () => {
   const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === '/') setIsVisible(true);
+    // if (location.pathname === '/') setIsVisible(true);
   }, []);
   console.log(location.pathname);
 
@@ -42,4 +42,4 @@ const SidebarContainer = styled.div`
 
 const SidebarItem = styled.div``;
 
-export default Sidebar;
+export default HomeSidebar;
