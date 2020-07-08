@@ -1,13 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const { closeDevServer } = require('../webpack');
 
 const app = express();
 
-app.post('/close', async (req, res) => {
-  res.sendStatus(200);
-  exitCleanup();
-  // process.exit(0);
-});
+app.use(cors());
 
 // Change to be dynamic later
 const PORT = 5000;
