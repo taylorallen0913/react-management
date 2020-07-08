@@ -7,7 +7,7 @@ if (args[0] === 'ui') {
   require('../src/server');
 
   // Launch UI
-  require('../src/webpack/devServer');
+  require('../src/webpack');
 } else {
   console.log('Error!');
 }

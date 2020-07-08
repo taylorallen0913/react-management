@@ -2,6 +2,7 @@ const express = require('express');
 
 const app = express();
 
+// Change to be dynamic later
 const PORT = 5000;
 
 const server = app.listen(PORT, () =>
