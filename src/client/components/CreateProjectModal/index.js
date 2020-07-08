@@ -20,19 +20,6 @@ const CreateProjectModal = () => {
           <div className="modal-body-container">
             <div className="card__footer">
               <div>
-                <h1 style={{ textAlign: 'center' }}>
-                  Already have a project?
-                  <a
-                    className="import-project-link"
-                    onClick={() => {
-                      closeCreateProjectModal();
-                      openImportProjectModal();
-                    }}
-                  >
-                    {' '}
-                    Import it
-                  </a>
-                </h1>
                 <button
                   className="button button--primary button--block modal-dismiss-button"
                   onClick={closeCreateProjectModal}

@@ -1,19 +1,20 @@
-.create-project-card {
+.create-project-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   border-style: dashed;
-  flex: 0 0 15%;
-  margin: 3% 2.5% 0 2.5%;
+  width: 90%;
+  height: 10em;
+  margin: 15% 5% 15% 5%;
   background-color: transparent !important;
   color: white;
 }
 
-.create-project-card:hover {
+.create-project-icon:hover {
   background-color: rgb(255, 255, 255, 0.05) !important;
   cursor: pointer !important;
 }
 
-.plus-sign {
+.create-project-plus-sign {
   font-size: 500%;
 }

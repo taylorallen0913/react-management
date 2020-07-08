@@ -30,15 +30,15 @@
 }
 
 .modal-header {
-  font-size: 2em;
+  font-size: 1.6em !important;
   text-align: center;
-  padding: 0 0 0.8em 0;
+  padding: 0 0 0.6em 0 !important;
   color: white;
   font-weight: 400;
 }
 
 .modal-header-container {
-  background-color: #1b1f3b;
+  background-color: #303846;
 }
 
 .modal-body-container {
@@ -46,14 +46,4 @@
   height: 100%;
   flex-direction: column;
   background-color: #738290;
-}
-
-.import-project-link {
-  cursor: pointer;
-  color: #454ade !important;
-  text-decoration: none;
-}
-
-.import-project-link:hover {
-  color: rgba(69, 74, 222, 0.8) !important;
 }

@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import ProjectCard from '../../components/ProjectCard';
-import CreateProjectCard from '../../components/CreateProjectCard';
 import { CreateProjectContext } from '../../context/createProjectContext';
 import { ImportProjectContext } from '../../context/importProjectContext';
 import CreateProjectModal from '../../components/CreateProjectModal';
@@ -24,7 +23,6 @@ const Home = () => {
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />
-      <CreateProjectCard />
     </div>
   );
 };
