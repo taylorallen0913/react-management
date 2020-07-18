@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
-import testReducer from './testReducer';
-import secondReducer from './secondReducer';
+import sidebarReducer from './sidebarReducer';
+import modalReducer from './modalReducer';
 
 const rootReducer = combineReducers({
-  test: testReducer,
-  second: secondReducer,
+  sidebar: sidebarReducer,
+  modal: modalReducer,
 });
 
 export default rootReducer;

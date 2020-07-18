@@ -1,17 +1,19 @@
-import React, { useContext } from 'react';
-import { ImportProjectContext } from '../../context/importProjectContext';
-import { CreateProjectContext } from '../../context/createProjectContext';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import {
+  setCreateProjectModalVisiblilty,
+  setImportProjectModalVisiblilty,
+} from '../../redux/actions/modalReducer';
 import Import from '../../assets/icons/import.svg';
 
 import './styles.css';
 
 const ImportProjectIcon = () => {
-  const { openImportProjectModal } = useContext(ImportProjectContext).modal;
-  const { closeCreateProjectModal } = useContext(CreateProjectContext).modal;
+  const dispatch = useDispatch();
 
   const onToggle = () => {
-    closeCreateProjectModal();
-    openImportProjectModal();
+    dispatch(setImportProjectModalVisiblilty(true));
+    dispatch(setCreateProjectModalVisiblilty(false));
   };
 
   return (

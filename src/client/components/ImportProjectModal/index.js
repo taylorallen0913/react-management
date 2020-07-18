@@ -1,10 +1,15 @@
-import React, { useContext } from 'react';
-import { ImportProjectContext } from '../../context/importProjectContext';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setImportProjectModalVisiblilty } from '../../redux/actions/modalReducer';
 
 import './styles.css';
 
 const ImportProjectModal = () => {
-  const { closeImportProjectModal } = useContext(ImportProjectContext).modal;
+  const dispatch = useDispatch();
+
+  const closeImportProjectModal = () => {
+    dispatch(setImportProjectModalVisiblilty(false));
+  };
 
   return (
     <div className="import-project-modal-container">

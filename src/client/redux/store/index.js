@@ -2,7 +2,19 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers';
 
-const initialState = {};
+const initialState = {
+  sidebar: {
+    isVisible: false,
+  },
+  modal: {
+    createProjectModal: {
+      isVisible: false,
+    },
+    importProjectModal: {
+      isVisible: false,
+    },
+  },
+};
 
 const middleware = [thunk];
 
