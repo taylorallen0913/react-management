@@ -20,7 +20,7 @@ const HomeSidebar = () => {
 
 const SidebarContainer = styled.div`
   height: 100%;
-  width: 200px;
+  width: 170px;
   position: fixed;
   z-index: 1;
   top: 0;
