@@ -4,7 +4,6 @@ import App from './App';
 import AppContext from './context';
 
 import './tailwind.css';
-// import 'infima/dist/css/default/default.css';
 
 ReactDOM.render(
   <AppContext>
