@@ -16,9 +16,10 @@
     "url": "git+https://github.com/taylorallen0913/react-management.git"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "better-opn": "^2.0.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "infima": "^0.2.0-alpha.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -30,10 +31,13 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.6.0",
+    "postcss": "^7.0.32",
+    "postcss-loader": "^3.0.0",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "style-loader": "^1.2.1",
     "svg-url-loader": "^6.0.0",
+    "tailwindcss": "^1.4.6",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"

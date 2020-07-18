@@ -1,15 +1,28 @@
 .project-card {
+  border-radius: 1em !important;
   flex: 0 0 15%;
   margin: 3% 2.5% 0 2.5%;
   background-color: #444950 !important;
   color: white;
-  text-align: center;
 }
 
 .project-card-header {
-  font-size: 1.2em;
+  text-align: center;
+  margin: 4% 1% 4% 1%;
+  font-size: 1.3em;
 }
 
 .project-card-icon {
   width: 65%;
+}
+
+.project-card-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.open-project-button {
+  margin: 4% 0 4% 0;
+  display: flex;
+  justify-content: center;
 }

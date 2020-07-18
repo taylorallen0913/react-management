@@ -1,5 +1,7 @@
+.navbar {
+  background-color: #303846;
+}
+
 .navbar-header {
-  color: white !important;
-  text-decoration: none !important;
-  cursor: pointer !important;
+  font-weight: 300;
 }

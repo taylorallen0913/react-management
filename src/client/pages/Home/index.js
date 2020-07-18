@@ -36,6 +36,8 @@ const Home = () => {
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </div>
     </Fragment>
   );

@@ -1,18 +1,17 @@
-.create-project-icon {
+.create-project-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: dashed;
+  border-radius: 10%;
   width: 90%;
   height: 10em;
   margin: 15% 5% 15% 5%;
-  background-color: transparent !important;
   color: white;
 }
 
-.create-project-icon:hover {
-  background-color: rgb(255, 255, 255, 0.05) !important;
-  cursor: pointer !important;
+.create-project-icon-container:hover {
+  background-color: rgb(255, 255, 255, 0.05);
+  cursor: pointer;
 }
 
 .create-project-plus-sign {
