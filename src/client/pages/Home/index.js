@@ -1,37 +1,39 @@
-import React, { useContext, useEffect, Fragment } from 'react';
+import React, { useEffect, Fragment } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSidebarVisibility } from '../../redux/actions/sidebarActions';
 import ProjectCard from '../../components/ProjectCard';
-import { CreateProjectContext } from '../../context/createProjectContext';
-import { ImportProjectContext } from '../../context/importProjectContext';
 import CreateProjectModal from '../../components/CreateProjectModal';
 import ImportProjectModal from '../../components/ImportProjectModal';
-import { SidebarContext } from '../../context/sidebarContext';
 import HomeSidebar from '../../components/HomeSidebar';
 
 import './styles.css';
 
 const Home = () => {
-  const { openSidebar, closeSidebar } = useContext(SidebarContext);
-  const { isCreateProjectModalVisible } = useContext(
-    CreateProjectContext,
-  ).modal;
-  const { isImportProjectModalVisible } = useContext(
-    ImportProjectContext,
-  ).modal;
+  const dispatch = useDispatch();
+  const sidebarStatus = useSelector((state) => state.sidebar.isVisible);
+  const isCreateProjectModalVisible = useSelector(
+    (state) => state.modal.createProjectModal.isVisible,
+  );
+  const isImportProjectModalVisible = useSelector(
+    (state) => state.modal.importProjectModal.isVisible,
+  );
 
   useEffect(() => {
-    openSidebar();
+    // Open home sidebar on mount
+    dispatch(setSidebarVisibility(true));
 
     return () => {
-      closeSidebar();
+      // Close home sidebar on cleanup
+      dispatch(setSidebarVisibility(false));
     };
   }, []);
 
   return (
     <Fragment>
-      <HomeSidebar />
+      {sidebarStatus === true && <HomeSidebar />}
       <div className="project-card-container">
-        {isCreateProjectModalVisible && <CreateProjectModal />}
-        {isImportProjectModalVisible && <ImportProjectModal />}
+        {isCreateProjectModalVisible === true && <CreateProjectModal />}
+        {isImportProjectModalVisible === true && <ImportProjectModal />}
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />

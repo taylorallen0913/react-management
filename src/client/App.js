@@ -1,14 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-
-import { SidebarContext } from './context/sidebarContext';
 
 import './App.css';
 
 const App = () => {
-  const { isSidebarVisible } = useContext(SidebarContext);
+  const isSidebarVisible = useSelector((state) => state.sidebar.isVisible);
 
   return (
     <Router>
