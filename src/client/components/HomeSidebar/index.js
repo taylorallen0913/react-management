@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import CreateProjectIcon from '../CreateProjectIcon';
 import ImportProjectIcon from '../ImportProjectIcon';
@@ -7,20 +7,20 @@ import './styles.css';
 
 const HomeSidebar = () => {
   return (
-    <Fragment>
+    <>
       <SidebarContainer>
         <SidebarItem>
           <CreateProjectIcon />
           <ImportProjectIcon />
         </SidebarItem>
       </SidebarContainer>
-    </Fragment>
+    </>
   );
 };
 
 const SidebarContainer = styled.div`
   height: 100%;
-  width: 200px;
+  width: 170px;
   position: fixed;
   z-index: 1;
   top: 0;

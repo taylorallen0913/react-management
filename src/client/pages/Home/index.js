@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSidebarVisibility } from '../../redux/actions/sidebarActions';
 import ProjectCard from '../../components/ProjectCard';
@@ -29,7 +29,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Fragment>
+    <>
       {sidebarStatus === true && <HomeSidebar />}
       <div className="project-card-container">
         {isCreateProjectModalVisible === true && <CreateProjectModal />}
@@ -41,7 +41,7 @@ const Home = () => {
         <ProjectCard />
         <ProjectCard />
       </div>
-    </Fragment>
+    </>
   );
 };
 
