@@ -1,4 +1,4 @@
-import { SET_SIDEBAR_VISIBILITY } from '../actions/types';
+import { SET_SIDEBAR_VISIBILITY } from '@actions/types';
 
 const initialState = {
   isVisible: false,

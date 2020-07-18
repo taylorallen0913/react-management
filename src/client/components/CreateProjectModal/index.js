@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setCreateProjectModalVisiblilty } from '../../redux/actions/modalReducer';
+import { setCreateProjectModalVisiblilty } from '@actions/modalReducer';
 
 import './styles.css';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import CreateProjectIcon from '../CreateProjectIcon';
-import ImportProjectIcon from '../ImportProjectIcon';
+import CreateProjectIcon from '@components/CreateProjectIcon';
+import ImportProjectIcon from '@components/ImportProjectIcon';
 
 import './styles.css';
 

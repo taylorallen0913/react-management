@@ -1,7 +1,7 @@
 import {
   SET_CREATE_PROJECT_MODAL_VISIBILITY,
   SET_IMPORT_PROJECT_MODAL_VISIBILITY,
-} from '../actions/types';
+} from '@actions/types';
 
 const initialState = {
   createProjectModal: {

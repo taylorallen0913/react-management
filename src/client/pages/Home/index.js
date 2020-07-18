@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setSidebarVisibility } from '../../redux/actions/sidebarActions';
-import ProjectCard from '../../components/ProjectCard';
-import CreateProjectModal from '../../components/CreateProjectModal';
-import ImportProjectModal from '../../components/ImportProjectModal';
-import HomeSidebar from '../../components/HomeSidebar';
+import { setSidebarVisibility } from '@actions/sidebarActions';
+import ProjectCard from '@components/ProjectCard';
+import CreateProjectModal from '@components/CreateProjectModal';
+import ImportProjectModal from '@components/ImportProjectModal';
+import HomeSidebar from '@components/HomeSidebar';
 
 import './styles.css';
 

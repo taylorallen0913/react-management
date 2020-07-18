@@ -1,5 +1,5 @@
 import React from 'react';
-import Biohazard from '../../assets/icons/biohazard.svg';
+import Biohazard from '@icons/biohazard.svg';
 
 import './styles.css';
 

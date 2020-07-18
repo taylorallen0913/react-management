@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux';
 import {
   setCreateProjectModalVisiblilty,
   setImportProjectModalVisiblilty,
-} from '../../redux/actions/modalReducer';
-import Import from '../../assets/icons/import.svg';
+} from '@actions/modalReducer';
+import Import from '@icons/import.svg';
 
 import './styles.css';
 

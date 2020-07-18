@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import {
   setCreateProjectModalVisiblilty,
   setImportProjectModalVisiblilty,
-} from '../../redux/actions/modalReducer';
+} from '@actions/modalReducer';
 
 import './styles.css';
 
