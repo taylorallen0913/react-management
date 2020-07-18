@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 
@@ -11,16 +13,18 @@ const App = () => {
   const { isSidebarVisible } = useContext(SidebarContext);
 
   return (
-    <Router>
-      <main className={isSidebarVisible ? 'sidebar-visible' : null}>
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </main>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <main className={isSidebarVisible ? 'sidebar-visible' : null}>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </main>
+      </Router>
+    </Provider>
   );
 };
 
